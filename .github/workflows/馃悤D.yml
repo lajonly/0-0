@@ -25,7 +25,9 @@ jobs:
         env:
             JD_COOKIE: ${{ secrets.JD_COOKIE }}
             SYNCURL: DrawEntrance.js
+                     joy.js
             XLC: ${{ secrets.XLC }}
             GITHUB: ${{ secrets.GITHUB }}
             EFORK: ${{ secrets.EFORK }}
             HELPURL: ${{ secrets.HELPURL }}
+ 
