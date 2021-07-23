@@ -27,4 +27,5 @@ jobs:
             SYNCURL: jxmc.js
             XLC: ${{ secrets.XLC }}
             GITHUB: ${{ secrets.GITHUB }}
-            EFORK: ${{ secrets.EFORK }}   
+            EFORK: ${{ secrets.EFORK }}
+            HELPURL: ${{ secrets.HELPURL }}
