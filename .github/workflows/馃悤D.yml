@@ -11,28 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-            node-version: 12.x
-      - name: npm install
-        run: |
-          npm install
-          npm i png-js
-          npm install cron
-          npm install request
-          curl ipinfo.io/json
-      - name: 'run sign'
-        run: |
-           node Club.js
-        env:
-            JD_COOKIE: ${{ secrets.JD_COOKIE }}
-            SYNCURL: https://raw.githubusercontent.com/jiang111/jiang111/master/script/jd_summer_movement.js
-            XLC: ${{ secrets.XLC }}
-            GITHUB: ${{ secrets.GITHUB }}
-            EFORK: ${{ secrets.EFORK }}
-            HELPURL: ${{ secrets.HELPURL }} 
     
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
