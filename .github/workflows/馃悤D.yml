@@ -17,9 +17,9 @@ jobs:
         with:
             node-version: 12.x
       - name: npm install
-              npm png-js
         run: |
           npm install
+          npm i png-js
       - name: 'run'
         run: |
            node Club.js
