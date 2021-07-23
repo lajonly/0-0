@@ -19,12 +19,12 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: 'run ttx'
+      - name: 'run'
         run: |
            node xlcsecret.js
         env:
             JD_COOKIE: ${{ secrets.JD_COOKIE }}
-            SYNCURL: jd_joy.js
+            SYNCURL: jjd_bean_sign.js
             XLC: ${{ secrets.XLC }}
             GITHUB: ${{ secrets.GITHUB }}
             EFORK: ${{ secrets.EFORK }}   
