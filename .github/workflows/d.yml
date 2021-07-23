@@ -3,7 +3,7 @@ name: D
 on:
   workflow_dispatch:
   schedule:
-    - cron: '6 * * * *'
+    - cron: '*/20 * * * *'
   watch:
   repository_dispatch:
 jobs:
