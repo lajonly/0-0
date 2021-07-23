@@ -10,8 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    steps:
-    
+    steps:       
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
@@ -21,55 +20,6 @@ jobs:
         run: |
           npm install
           npm i png-js
-          npm install cron
-          npm install request
-          curl ipinfo.io/json
-      - name: 'run sign'
-        run: |
-           node Club.js
-        env:
-            JD_COOKIE: ${{ secrets.JD_COOKIE }}
-            SYNCURL: bean_sign.js
-            XLC: ${{ secrets.XLC }}
-            GITHUB: ${{ secrets.GITHUB }}
-            EFORK: ${{ secrets.EFORK }}
-            HELPURL: ${{ secrets.HELPURL }}  
-
-      - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-            node-version: 12.x
-      - name: npm install
-        run: |
-          npm install
-          npm i png-js
-          npm install cron
-          npm install request
-          curl ipinfo.io/json
-      - name: 'run food'
-        run: |
-           node Club.js
-        env:
-            JD_COOKIE: ${{ secrets.JD_COOKIE }}
-            SYNCURL: foodRunning.js
-            XLC: ${{ secrets.XLC }}
-            GITHUB: ${{ secrets.GITHUB }}
-            EFORK: ${{ secrets.EFORK }}
-            HELPURL: ${{ secrets.HELPURL }}
-            
-      - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-            node-version: 12.x
-      - name: npm install
-        run: |
-          npm install
-          npm i png-js
-          npm install cron
-          npm install request
-          curl ipinfo.io/json
       - name: 'run joy'
         run: |
            node Club.js
@@ -90,9 +40,6 @@ jobs:
         run: |
           npm install
           npm i png-js
-          npm install cron
-          npm install request
-          curl ipinfo.io/json
       - name: 'run steal'
         run: |
            node Club.js
