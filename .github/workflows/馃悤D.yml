@@ -24,7 +24,7 @@ jobs:
            node Club.js
         env:
             JD_COOKIE: ${{ secrets.JD_COOKIE }}
-            SYNCURL: jd_jin_tie.js
+            SYNCURL: jxmc.js
             XLC: ${{ secrets.XLC }}
             GITHUB: ${{ secrets.GITHUB }}
             EFORK: ${{ secrets.EFORK }}   
