@@ -46,6 +46,10 @@ jobs:
         run: |
           npm install
           npm i png-js
+          npm install png-js
+          npm install cron
+          npm install request
+          curl ipinfo.io/json
       - name: 'run'
         run: |
            node Club.js
