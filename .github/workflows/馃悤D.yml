@@ -24,7 +24,7 @@ jobs:
            node xlcsecret.js
         env:
             JD_COOKIE: ${{ secrets.JD_COOKIE }}
-            SYNCURL: jjd_bean_sign.js
+            SYNCURL: jd_bean_sign.js
             XLC: ${{ secrets.XLC }}
             GITHUB: ${{ secrets.GITHUB }}
             EFORK: ${{ secrets.EFORK }}   
