@@ -21,7 +21,7 @@ jobs:
           npm install
       - name: 'run'
         run: |
-           node xlcsecret.js
+           node Club.js
         env:
             JD_COOKIE: ${{ secrets.JD_COOKIE }}
             SYNCURL: jd_bean_sign.js
