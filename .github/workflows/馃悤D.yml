@@ -17,8 +17,7 @@ jobs:
         with:
             node-version: 12.x
       - name: npm install
-              npm i png-js
-              npm i png-js -S
+              npm png-js
         run: |
           npm install
       - name: 'run'
