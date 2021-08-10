@@ -20,12 +20,12 @@ jobs:
         run: |
           npm install
           npm i png-js
-      - name: 'run joy'
+      - name: 'run nc'
         run: |
            node Club.js
         env:
             JD_COOKIE: ${{ secrets.JD_COOKIE }}
-            SYNCURL: joy.js
+            SYNCURL: necklace.js
             XLC: ${{ secrets.XLC }}
             GITHUB: ${{ secrets.GITHUB }}
             EFORK: ${{ secrets.EFORK }}
